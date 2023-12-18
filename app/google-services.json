@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "617180955232",
+    "project_id": "my-milk-project-370de",
+    "storage_bucket": "my-milk-project-370de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617180955232:android:e7dd9aaec58698f62e3905",
+        "android_client_info": {
+          "package_name": "com.tanphuong.milktea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-phdbz5S8E-xytMrfj5B69Ao-IOwWO0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
