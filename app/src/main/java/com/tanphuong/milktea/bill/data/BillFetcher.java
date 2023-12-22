@@ -14,6 +14,7 @@ import com.tanphuong.milktea.authorization.data.UserFactory;
 import com.tanphuong.milktea.authorization.data.model.User;
 import com.tanphuong.milktea.bill.data.model.Bill;
 import com.tanphuong.milktea.bill.data.model.BillStatus;
+import com.tanphuong.milktea.bill.data.model.PaymentMethod;
 import com.tanphuong.milktea.drink.data.IngredientFetcher;
 import com.tanphuong.milktea.drink.data.MilkTeaFetcher;
 import com.tanphuong.milktea.drink.data.ToppingFetcher;
@@ -24,13 +25,21 @@ import com.tanphuong.milktea.drink.data.model.MilkTeaOrder;
 import com.tanphuong.milktea.drink.data.model.RealIngredient;
 import com.tanphuong.milktea.drink.data.model.Size;
 import com.tanphuong.milktea.drink.data.model.SugarGauge;
+import com.tanphuong.milktea.shipment.data.model.Shipper;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 public class BillFetcher {
     private static final String TAG = "BillFactory";
+
+    public static List<Bill> fakeBills() {
+        List<Bill> bills = new ArrayList<>();
+        bills.add(new Bill("BIll1", new ArrayList<>(), new User(), new Shipper(), new PaymentMethod(), new BillStatus(), new Date());
+        return bills;
+    }
 
     public static void fetchBills(Callback callback) {
         IngredientFetcher.fetchIngredients(new IngredientFetcher.Callback() {
