@@ -21,6 +21,9 @@ import java.util.Map;
 public final class MilkTeaFetcher {
     private static final String TAG = "MilkTeaFetcher";
 
+
+
+
     public static void fetchMilkTeas(List<Ingredient> ingredients, Callback callback) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("milk_teas").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

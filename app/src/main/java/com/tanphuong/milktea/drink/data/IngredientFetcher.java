@@ -17,6 +17,16 @@ import java.util.List;
 public final class IngredientFetcher {
     private static final String TAG = "IngredientFetcher";
 
+    public static List<Ingredient> fakeIngredients(){
+
+
+    ArrayList<Ingredient> ingredients = new ArrayList<>();
+
+    ingredients.add(new Ingredient("133", "Dick", "unit113", 221311));
+    return ingredients;
+    }
+
+
     public static void fetchIngredients(Callback callback) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("ingredients").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

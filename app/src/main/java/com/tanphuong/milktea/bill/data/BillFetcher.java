@@ -31,13 +31,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import static com.tanphuong.milktea.bill.data.model.PaymentMethod.CASH;
 
 public class BillFetcher {
     private static final String TAG = "BillFactory";
-
+    PaymentMethod paymentMethod = PaymentMethod.CASH;
     public static List<Bill> fakeBills() {
         List<Bill> bills = new ArrayList<>();
-        bills.add(new Bill("BIll1", new ArrayList<>(), new User(), new Shipper(), new PaymentMethod(), new BillStatus(), new Date());
+        bills.add(new Bill("BIll1", new ArrayList<>(), new User(), new Shipper(), PaymentMethod.CASH, BillStatus.ON_GOING, new Date()));
         return bills;
     }
 
