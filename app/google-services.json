@@ -1,26 +1,102 @@
 {
   "project_info": {
-    "project_number": "617180955232",
-    "project_id": "my-milk-project-370de",
-    "storage_bucket": "my-milk-project-370de.appspot.com"
+    "project_number": "167817210856",
+    "project_id": "project1-b25f0",
+    "storage_bucket": "project1-b25f0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:617180955232:android:e7dd9aaec58698f62e3905",
+        "mobilesdk_app_id": "1:167817210856:android:fa8039c5aacb5eb868125d",
         "android_client_info": {
           "package_name": "com.tanphuong.milktea"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "167817210856-qb8gqjintgs5l2cdu4ouj8lj1bes5pa7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanphuong.milktea",
+            "certificate_hash": "224d19e9a5cd26d5d91ad0b9476d283e89baff3c"
+          }
+        },
+        {
+          "client_id": "167817210856-q1itb65vje38jqpi0v8uitpojj5inugh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-phdbz5S8E-xytMrfj5B69Ao-IOwWO0Q"
+          "current_key": "AIzaSyBTF2ZmE2tHeoydi3AxyRfTig90LQe-7HU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167817210856-q1itb65vje38jqpi0v8uitpojj5inugh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167817210856:android:7f47a480d8ca0e9268125d",
+        "android_client_info": {
+          "package_name": "fpoly.huyndph40487.qlda_bantrsua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167817210856-q1itb65vje38jqpi0v8uitpojj5inugh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTF2ZmE2tHeoydi3AxyRfTig90LQe-7HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167817210856-q1itb65vje38jqpi0v8uitpojj5inugh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167817210856:android:4e358ee2daeec39868125d",
+        "android_client_info": {
+          "package_name": "phcom.phlynk.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167817210856-q1itb65vje38jqpi0v8uitpojj5inugh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTF2ZmE2tHeoydi3AxyRfTig90LQe-7HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167817210856-q1itb65vje38jqpi0v8uitpojj5inugh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
