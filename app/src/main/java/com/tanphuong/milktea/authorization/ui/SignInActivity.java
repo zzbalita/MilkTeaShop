@@ -2,6 +2,7 @@ package com.tanphuong.milktea.authorization.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.telecom.Call;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -28,12 +29,15 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthMissingActivityForRecaptchaException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.tanphuong.milktea.authorization.data.AuthorizationValidator;
 import com.tanphuong.milktea.authorization.data.PhoneSignIn;
 import com.tanphuong.milktea.authorization.data.UserUploader;
 import com.tanphuong.milktea.core.ui.LoadingDialog;
 import com.tanphuong.milktea.databinding.ActivitySignInBinding;
 import com.tanphuong.milktea.home.ui.HomeActivity;
+
+import java.util.concurrent.TimeUnit;
 
 public class SignInActivity extends AppCompatActivity {
     private static final String TAG = "SignInActivity";
@@ -44,6 +48,7 @@ public class SignInActivity extends AppCompatActivity {
     private PhoneSignIn phoneSignIn;
     private String currentVerificationId;
     private LoadingDialog loadingDialog;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -196,6 +201,7 @@ public class SignInActivity extends AppCompatActivity {
                 // Bắt đầu gửi OTP
                 showLoading();
                 phoneSignIn.startPhoneNumberVerification("+84" + binding.edtPhone.getText());
+
             }
         });
         binding.layoutBottomSheet.otpView.addTextChangedListener(new TextWatcher() {

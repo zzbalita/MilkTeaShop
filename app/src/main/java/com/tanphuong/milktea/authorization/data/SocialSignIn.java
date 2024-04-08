@@ -9,7 +9,7 @@ public class SocialSignIn {
         googleSignInRequest = BeginSignInRequest.builder()
                 .setGoogleIdTokenRequestOptions(BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
                         .setSupported(true)
-                        .setServerClientId("672860158503-798kkjcheu79n60ibpgkv5u03voafiji.apps.googleusercontent.com")
+                        .setServerClientId("167817210856-r8u744ks2cbf4tb295h5mmk97vvvuoj8.apps.googleusercontent.com")
                         .setFilterByAuthorizedAccounts(true)
                         .build())
                 .build();
