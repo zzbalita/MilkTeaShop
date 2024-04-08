@@ -43,7 +43,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15sp"
             android:fontFamily="sans-serif-light"
-            android:text="Phúc TH"
+            android:text="Hiếu Nguyễn"
             android:textColor="@color/white"
             android:textSize="32sp" />
     </RelativeLayout>
@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="1911061092@hunre.edu.vn"
+                    android:text="hieunmph46626@fpt.edu.vn"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
@@ -110,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="+84 376 822 819"
+                    android:text="+84 399035868"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
@@ -140,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Văn Phú, Hà Đông, Hà Nội"
+                    android:text="Hà Nội"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
