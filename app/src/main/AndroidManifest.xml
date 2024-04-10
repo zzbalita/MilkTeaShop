@@ -57,6 +57,11 @@
         <activity
             android:name=".authorization.ui.SignInActivity"
             android:exported="true" />
+        <activity
+            android:name=".storage.ui.StorageDetailActivity"
+            android:exported="false"
+            android:label="StorageDetailActivity"/>
+
     </application>
 
 </manifest>

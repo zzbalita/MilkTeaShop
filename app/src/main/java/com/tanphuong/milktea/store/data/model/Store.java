@@ -1,8 +1,12 @@
 package com.tanphuong.milktea.store.data.model;
 
+import com.tanphuong.milktea.storage.data.model.Storage;
+
 import java.io.Serializable;
+import java.util.List;
 
 public class Store implements Serializable {
+    public List<Storage> storage;
     private String id;
     private String name;
     private String address;
@@ -11,10 +15,11 @@ public class Store implements Serializable {
     private double latitude;
     private double longitude;
 
-    public Store() {
-    }
 
-    public Store(String id, String name, String address, String phoneNumber, String coverImage, double latitude, double longitude) {
+
+
+
+    public Store(List<Storage> storage, String id, String name, String address, String phoneNumber, String coverImage, double latitude, double longitude) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -22,6 +27,7 @@ public class Store implements Serializable {
         this.coverImage = coverImage;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.storage = storage;
     }
 
     public String getId() {

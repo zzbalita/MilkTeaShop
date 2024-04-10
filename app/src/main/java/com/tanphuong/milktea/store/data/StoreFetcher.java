@@ -27,7 +27,7 @@ public final class StoreFetcher {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Log.d(TAG, document.getId() + " => " + document.getData());
                         stores.add(new Store(
-                                document.getId(),
+                                storage, document.getId(),
                                 document.getString("name"),
                                 document.getString("address"),
                                 document.getString("phone_number"),
