@@ -21,7 +21,7 @@ public final class ToppingFetcher {
 
     public static void fetchToppings(List<Ingredient> ingredients, Callback callback) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        db.collection("toppings").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("topping").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {

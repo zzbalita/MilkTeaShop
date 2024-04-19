@@ -156,6 +156,16 @@
     </RelativeLayout>
 
     <Button
+        android:id="@+id/btn_edt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="@color/Red"
+        android:paddingVertical="12dp"
+        android:text="Sửa thông tin" />
+    <Button
         android:id="@+id/btn_sign_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

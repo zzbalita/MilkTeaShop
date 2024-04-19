@@ -26,7 +26,7 @@ public final class MilkTeaFetcher {
 
     public static void fetchMilkTeas(List<Ingredient> ingredients, Callback callback) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        db.collection("milk_teas").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("milk_tea").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {

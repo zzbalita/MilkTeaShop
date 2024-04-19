@@ -15,8 +15,8 @@ public final class ShipperFetcher {
 
     public static void fetchShipper(@NonNull Callback callback) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        String shipperId = "1";
-        db.collection("shippers")
+        String shipperId = "groBKFgOSX4lCvTBxSk3";
+        db.collection("shipper")
                 .document(shipperId)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

@@ -55,7 +55,7 @@ public class StoreListFragment extends Fragment implements OnMapReadyCallback,
 
         // Lấy danh sách store từ Firestore
         binding.pbLoading.setVisibility(View.VISIBLE);
-        StoreFetcher.fetchStores(new StoreFetcher.Callback() {
+        StoreFetcher.fetchStores(new ArrayList<>(), new StoreFetcher.Callback(){
             @Override
             public void onLoaded(List<Store> stores) {
                 binding.pbLoading.setVisibility(View.GONE);

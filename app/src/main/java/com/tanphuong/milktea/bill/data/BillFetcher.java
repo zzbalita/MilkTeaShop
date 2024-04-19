@@ -57,7 +57,7 @@ public class BillFetcher {
                                 User user = UserFactory.getCurrentUser();
                                 FirebaseFirestore db = FirebaseFirestore.getInstance();
                                 DocumentReference userRef = db.collection("users").document(user.getId());
-                                db.collection("bills")
+                                db.collection("bill")
                                         .whereEqualTo("user", userRef)
                                         .get()
                                         .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
