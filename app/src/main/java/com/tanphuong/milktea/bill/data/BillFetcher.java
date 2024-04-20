@@ -111,8 +111,7 @@ public class BillFetcher {
                                                         bill.setStatus(BillStatus.fromString(document.getString("status")));
                                                         bill.calculateTotalPrice();
                                                         bills.add(bill);
-                                                    }
-                                                    callback.onLoaded(bills);
+                                                    }callback.onLoaded(bills);
                                                 } else {
                                                     Log.d(TAG, "Error getting documents: ", task.getException());
                                                     callback.onFailed();

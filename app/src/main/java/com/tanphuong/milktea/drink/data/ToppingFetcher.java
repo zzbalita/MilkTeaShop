@@ -28,7 +28,7 @@ public final class ToppingFetcher {
                     List<RealIngredient> toppings = new ArrayList<>();
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Log.d(TAG, document.getId() + " => " + document.getData());
-                        DocumentReference ingredientRef = document.getDocumentReference("ingredient");
+                        DocumentReference ingredientRef = document.getDocumentReference("ingredients");
                         if (ingredientRef == null) {
                             continue;
                         }
